@@ -1,4 +1,4 @@
-mport streamlit as st
+import streamlit as st
 import pandas as pd
 import cv2
 import numpy as np
@@ -117,3 +117,4 @@ if uploaded_file is not None:
         
         # Display a color box
         st.color_picker("Color Reference", f"#{rgb_tuple[0]:02x}{rgb_tuple[1]:02x}{rgb_tuple[2]:02x}")
+
