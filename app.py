@@ -45,17 +45,17 @@ if uploaded_file is not None:
 
         # Get BGR values (OpenCV reads in BGR)
         b, g, r = image[y, x]
-        
+
         # Convert to RGB
         rgb_tuple = (int(r), int(g), int(b))
-        
+
         # Get color name
         color_name = get_color_name(rgb_tuple[0], rgb_tuple[1], rgb_tuple[2])
-        
+
         st.subheader("Detected Color Details:")
         st.write(f"**Color Name:** {color_name}")
         st.write(f"**RGB Values:** {rgb_tuple}")
-        
+
         # Display a color box
         st.color_picker("Color Reference", f"#{rgb_tuple[0]:02x}{rgb_tuple[1]:02x}{rgb_tuple[2]:02x}")
 import streamlit as st
@@ -105,18 +105,17 @@ if uploaded_file is not None:
 
         # Get BGR values (OpenCV reads in BGR)
         b, g, r = image[y, x]
-        
+
         # Convert to RGB
         rgb_tuple = (int(r), int(g), int(b))
-        
+
         # Get color name
         color_name = get_color_name(rgb_tuple[0], rgb_tuple[1], rgb_tuple[2])
-        
+
         st.subheader("Detected Color Details:")
         st.write(f"**Color Name:** {color_name}")
         st.write(f"**RGB Values:** {rgb_tuple}")
-        
+
         # Display a color box
         st.color_picker("Color Reference", f"#{rgb_tuple[0]:02x}{rgb_tuple[1]:02x}{rgb_tuple[2]:02x}")
-
 
